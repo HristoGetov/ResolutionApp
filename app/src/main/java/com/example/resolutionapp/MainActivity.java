@@ -26,9 +26,12 @@ public class MainActivity extends AppCompatActivity {
         textView.setText("Resolution: \n" + "Height: " + height + "\n Width: " + width);
         AppUpdater appUpdater = new AppUpdater(this);
         appUpdater.setUpdateFrom(UpdateFrom.GITHUB);
-        appUpdater.setDisplay(Display.DIALOG).setCancelable(false);
-        appUpdater.start();
+        appUpdater.setGitHubUserAndRepo("hristogetov","ResolutionApp")
+                .setDisplay(Display.DIALOG).setCancelable(false)
+                .start();
        // Log.e("Resolution", "Height: " + height + ", Width: " + width);
-        //Toast.makeText(this,"Resolution: " + "Height: " + height + ", Width: " + width, Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"Resolution: " + "Height: " + height + ", Width: " + width, Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"This is a message for new release! ", Toast.LENGTH_LONG).show();
+
     }
 }
