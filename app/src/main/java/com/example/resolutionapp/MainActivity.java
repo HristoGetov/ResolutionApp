@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
        // Log.e("Resolution", "Height: " + height + ", Width: " + width);
         Toast.makeText(this,"Resolution: " + "Height: " + height + ", Width: " + width, Toast.LENGTH_LONG).show();
         Toast.makeText(this,"This is a message for new release! ", Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"This is a message for new release version 1.1! ", Toast.LENGTH_LONG).show();
+
 
     }
 }
